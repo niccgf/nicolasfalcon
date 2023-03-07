@@ -1,11 +1,34 @@
-* {
+body {
     margin:0px;
     box-sizing: border-box;
     font-family: 'Golos Text', sans-serif;
     background-color: #0E0B2C;
 }
 
-/* Links Style */
+/* --------- Background Circles --------- */
+.circle-blue{
+    position: absolute;
+    width: 726px;
+    height: 726px;
+    right: 1089px;
+    top: -374px;
+    background: rgba(6, 31, 255, 0.97);
+    filter: blur(302px);
+    z-index:-1;
+}
+
+.circle-red{
+    position: absolute;
+    width: 726px;
+    height: 726px;
+    left: 1089px;
+    top: 589px;
+    background: rgba(255, 6, 66, 0.7);
+    filter: blur(302px);
+    z-index:-1;
+}
+
+/* --------- Links Style --------- */
 
 a {
     all: unset;
@@ -20,13 +43,14 @@ a:hover{
     transition:.5s;
 }
 
-/* Header & Navbar */
+/* --------- Header & Navbar --------- */
 
 header{
     display:flex;
     justify-content:space-around;
     align-items:center;
     padding-top:1%;
+    z-index:2;
 }
 
 header #title {
@@ -47,12 +71,13 @@ header #navbar{
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Main Section */
+/* --------- Main Section --------- */
 
 main{
     margin-top:5%;
+    z-index:2;
 }
-    /* About */
+    /* --------- About --------- */
 
 #principal-about{
     display:flex;
@@ -66,7 +91,7 @@ main{
     flex-direction: column;
 }
 
-    /* Title & Subtitle */
+    /* --------- Title & Subtitle --------- */
 
 .subtitle{
     font-size:small;
@@ -85,7 +110,7 @@ main{
 .title blue{
     color:blue;
 }
-    /* Title & Subtitle End */
+    /* --------- Title & Subtitle End --------- */
 
     /* --------- Photo Start --------- */
 
@@ -108,11 +133,15 @@ main{
 
 /* --------- Main Section End --------- */
 
+
 /* --------- Media Queries --------- */
 
 /* --------- Landscape phones and down --------- */
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
+    *{
+        max-width:480px;
+    } 
     header #title{
         font-size:40px;
     }
@@ -140,11 +169,36 @@ main{
     #photo #pedroPascal{
         max-width:300px;
     }
+
+    .circle-blue{
+        position: absolute;
+        width: 726px;
+        height: 726px;
+        right:100%;
+        top:-30%;
+        background: rgba(6, 31, 255, 0.97);
+        filter: blur(302px);
+        z-index:-1;
+    }
+    
+    .circle-red{
+        position: absolute;
+        width: 726px;
+        height: 726px;
+        left:0%;
+        top:30%;
+        background: rgba(255, 6, 66, 0.7);
+        filter: blur(302px);
+        z-index:-1;
+    }
  }
 
 /* --------- Landscape phone to portrait tablet --------- */
 
- @media (max-width:767px){
+ @media (min-width:481px) and (max-width:768px){
+    *{
+        max-width:768px;
+    }
     header{
         flex-direction:column;
         gap:5%;
@@ -169,10 +223,34 @@ main{
     #photo #pedroPascal{
         max-width:300px;
     }
+    .circle-blue{
+        position: absolute;
+        width: 726px;
+        height: 726px;
+        right:50%;
+        top:-60%;
+        background: rgba(6, 31, 255, 0.97);
+        filter: blur(302px);
+        z-index:-1;
+    }
+    
+    .circle-red{
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        left:20%;
+        top:40%;
+        background: rgba(255, 6, 66, 0.7);
+        filter: blur(302px);
+        z-index:-1;
+    }
  }
 
  /* --------- Portrait tablet to landscape and desktop --------- */
- @media (min-width: 768px) and (max-width: 979px) { 
+ @media (min-width: 769px) and (max-width: 979px) { 
+    *{
+        max-width:979px;
+    }
     .title{
         font-size:35px;
     }
@@ -184,6 +262,25 @@ main{
     #pedroPascal{
         max-width:300px;
     }
+    .circle-blue{
+        position: absolute;
+        width: 726px;
+        height: 726px;
+        right:50%;
+        top:-40%;
+        background: rgba(6, 31, 255, 0.97);
+        filter: blur(302px);
+        z-index:-1;
+    }
+    
+    .circle-red{
+        position: absolute;
+        width: 726px;
+        height: 726px;
+        left:15%;
+        top:25%;
+        background: rgba(255, 6, 66, 0.7);
+        filter: blur(302px);
+        z-index:-1;
+    }
  }
-
- 
