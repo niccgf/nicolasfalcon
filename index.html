@@ -13,33 +13,65 @@
     <title>Nicolás Falcón</title>
 </head>
 <body>
-    <div class="circle-red"></div>
-    <div class="circle-blue"></div>
-    <!-- Header & Navbar -->
-    <header>
-        <div id="title">Nicolás Falcón</div>
-        <div id="navbar">
-            <span class="navbar-item"><a href="index.html">HOME</a></span>
-            <span class="navbar-item"><a href="pages/about.html">ABOUT</a></span>
-            <span class="navbar-item"><a href="index.html">CONTACT</a></span>
-        </div>
-    </header>
-    <!-- Header & Navbar End -->
-    <!-- Main Section Start -->
-    <main>
-        <!-- About Start -->
-        <section id="principal-about">
-            <div id="about">
-                <span class="subtitle">HI THERE, WELCOME TO MY SITE :-)</span>
-                
-                <span class="title">I'm <red>Nicolás Falcón</red>,<br> QC Analyst <br> & <blue>Automation Engineer</blue></span>
+    <div id="viewport">
+        <div class="circle-red"></div>
+        <div class="circle-blue"></div>
+        <!-- Header & Navbar -->
+        <header>
+            <div id="title">Nicolás Falcón</div>
+            <div id="navbar">
+                <span class="navbar-item"><a href="index.html">HOME</a></span>
+                <span class="navbar-item"><a id="test">ABOUT</a></span>
+                <span class="navbar-item"><a href="index.html">CONTACT</a></span>
             </div>
-            <div id="photo">
-                <img src="assets/picture.png" alt="Myself" id="pedroPascal">
-            </div>
-        </section>
-        <!-- About End -->
-    </main>
-    <!-- Main Section End -->
+        </header>
+        <!-- Header & Navbar End -->
+        <!-- Main Section Start -->
+        <main>
+            <!-- About Start -->
+            <section id="principal-about">
+                <div id="about">
+                    <span class="subtitle">HI THERE, WELCOME TO MY SITE :-)</span>
+                    
+                    <span class="title">I'm <red>Nicolás Falcón</red>,<br> QC Analyst <br> & <blue>Automation Engineer</blue></span>
+                </div>
+                <div id="photo">
+                    <img src="assets/picture.png" alt="Myself" id="pedroPascal">
+                </div>
+            </section>
+            <!-- About End -->
+            <!-- Personal Info Start -->
+            <section id="information">
+                <div id="personal-info">
+                    <span class="subtitle" id="anchor">A LITTLE BIT ABOUT ME</span>
+                    <div class="personal-text">
+                        <span class="text">I'm a Software Developer @ MELI, latin america <italic>biggest</italic> e-commerce platform, with over 76M users all over the region!</span>
+                        <span class="text">I work as a <bold>Quality Control Analyst</bold>, with focus on <bold>Automation with Python</bold></span>
+                        <span class="text">In my daily routine I use tools like <bold>Jira Software</bold>, <bold>Tableau</bold>, <bold>SQL</bold> (working with BigQuery, and formerly with Teradata), and <bold>Project Jupyter</bold>, among many others</span>
+                        <span class="text">My main responsability is to <bold>Manage Incidents</bold> on our sites, with quality, following the issue from its creation to its resolution</span>
+                        <span class="text">and making sure the solution is <bold>user-centered</bold>, giving maximum priority to critical ones;</span>
+                        <span class="text">Besides that, as an <bold>Automation Engineer</bold>, I work hard to learn new ways of manage user cases and bugs automatically,</span>
+                        <span class="text">reducing the time it takes for the user to have an answer to its concern, and helping to reduce the manual incoming of the team.</span>
+                    </div>
+                    <span class="subtitle">ABILITIES</span>
+                    <div class="personal-text">
+                        <span class="text"><bold>Programming Skills</bold></span>
+                        <span class="text">Python, HTML, CSS, JavaScript, Java</span>
+                        <span class="text"><bold>Incident Management Skills</bold></span>
+                        <span class="text">Jira Software, Jira Service Management</span>
+                        <span class="text"><bold>Soft Skills</bold></span>
+                        <span class="text">Problem Solving, Communicational Skills, Agile Methodologies (SCRUM)</span>
+                        <span class="text"><bold>Cool Things :-)</bold></span>
+                        <span class="text">B2 English Level, Data Analytics knowledge, Git, Testing...</span>
+                        <span class="text">... and yet to come! <bold>I'm a permanent learner.</bold></span>
+                    </div><br><br>
+                </div>
+            </section>
+            <!-- Personal Info End -->
+        </main>
+        <!-- Main Section End -->
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="scripts/scripts.js"></script>
 </html>

@@ -1,8 +1,13 @@
-body {
+html{
+    scroll-behavior: smooth;
+}
+
+body {    
     margin:0px;
     box-sizing: border-box;
     font-family: 'Golos Text', sans-serif;
     background-color: #0E0B2C;
+    overflow-x:hidden;
 }
 
 /* --------- Background Circles --------- */
@@ -21,8 +26,9 @@ body {
     position: absolute;
     width: 726px;
     height: 726px;
+    max-width:100%;
     left: 1089px;
-    top: 589px;
+    top: 374px;
     background: rgba(255, 6, 66, 0.7);
     filter: blur(302px);
     z-index:-1;
@@ -76,6 +82,9 @@ header #navbar{
 main{
     margin-top:5%;
     z-index:2;
+    display:flex;
+    flex-direction: column;
+    gap:90px;
 }
     /* --------- About --------- */
 
@@ -152,7 +161,51 @@ main{
 
 /* ------------------ About Me End ------------------ */
 
+/* ------------------ Personal Information ------------------ */
+
+#information{
+    display:flex;
+    justify-content: center;
+    color:whitesmoke;
+}
+
+#information #personal-info{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:40px;
+}
+
+.personal-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.text{
+    font-size:medium;
+    font-weight:lighter;
+}
+
+italic{
+    font-style:italic;
+}
+bold{
+    font-weight:bold;
+}
+
+/* ------------------ Personal Information End ------------------ */
+
 /* --------- Media Queries --------- */
+
+/* ------- Reduced Motion -------- */
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 /* --------- Landscape phones and down --------- */
 
@@ -160,6 +213,10 @@ main{
     *{
         max-width:480px;
     } 
+    #viewport{
+        position:relative;
+        overflow-x:hidden;
+    }
     header #title{
         font-size:40px;
     }
@@ -203,11 +260,26 @@ main{
         position: absolute;
         width: 726px;
         height: 726px;
-        left:-40%;
-        top:10%;
+        max-width:100%;
+        left:20%;
+        top:50%;
         background: rgba(255, 6, 66, 0.7);
         filter: blur(302px);
         z-index:-1;
+    }
+
+    #personal-info{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    .personal-text{
+        gap:10px;
+    }
+
+    .text{
+        font-size:smaller;
+        text-align:center;
     }
  }
 
@@ -216,6 +288,10 @@ main{
  @media (min-width:481px) and (max-width:768px){
     *{
         max-width:768px;
+    }
+    #viewport{
+        position:relative;
+        overflow-x:hidden;
     }
     header{
         flex-direction:column;
@@ -256,11 +332,25 @@ main{
         position: absolute;
         width: 600px;
         height: 600px;
+        max-width:100%;
         left:20%;
         top:40%;
         background: rgba(255, 6, 66, 0.7);
         filter: blur(302px);
         z-index:-1;
+    }
+    #personal-info{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    .personal-text{
+        gap:10px;
+    }
+
+    .text{
+        font-size:smaller;
+        text-align:center;
     }
  }
 
@@ -268,6 +358,10 @@ main{
  @media (min-width: 769px) and (max-width: 979px) { 
     *{
         max-width:979px;
+    }
+    #viewport{
+        position:relative;
+        overflow-x:hidden;
     }
     .title{
         font-size:35px;
@@ -295,10 +389,24 @@ main{
         position: absolute;
         width: 726px;
         height: 726px;
+        max-width:100%;
         left:15%;
         top:25%;
         background: rgba(255, 6, 66, 0.7);
         filter: blur(302px);
         z-index:-1;
+    }
+    #personal-info{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    .personal-text{
+        gap:10px;
+    }
+
+    .text{
+        font-size:smaller;
+        text-align:center;
     }
  }
