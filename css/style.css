@@ -87,12 +87,12 @@ main{
 }
     /* Title & Subtitle End */
 
-    /* Photo Start */
+    /* --------- Photo Start --------- */
 
 #pedroPascal{
     max-height:500px;
     border-radius:50px;
-        /* Border */
+        /* --------- Border --------- */
     border: double .5rem transparent;
     background-image:radial-gradient(circle at top left,blue,red);
     background-origin:border-box;
@@ -104,6 +104,86 @@ main{
     max-height:550px;
     transition:1s;
 }
-    /* Photo End */
+    /* --------- Photo End --------- */
 
-/* Main Section End */
+/* --------- Main Section End --------- */
+
+/* --------- Media Queries --------- */
+
+/* --------- Landscape phones and down --------- */
+
+@media (max-width: 480px) { 
+    header #title{
+        font-size:40px;
+    }
+
+    header #navbar{
+        display:none;
+    }
+
+    #principal-about{
+        flex-direction:column;
+    }
+
+    .title{
+        font-size:30px;
+        text-align:center;
+    }
+    .subtitle{
+        text-align:center;
+        font-size:10px;
+    }
+
+    #photo{
+        padding-top:10%;
+    }
+    #photo #pedroPascal{
+        max-width:300px;
+    }
+ }
+
+/* --------- Landscape phone to portrait tablet --------- */
+
+ @media (max-width:767px){
+    header{
+        flex-direction:column;
+        gap:5%;
+    }
+
+    #principal-about{
+        flex-direction:column;
+    }
+
+    .title{
+        font-size:45px;
+        text-align:center;
+    }
+    .subtitle{
+        text-align:center;
+        font-size:15px;
+    }
+
+    #photo{
+        padding-top:10%;
+    }
+    #photo #pedroPascal{
+        max-width:300px;
+    }
+ }
+
+ /* --------- Portrait tablet to landscape and desktop --------- */
+ @media (min-width: 768px) and (max-width: 979px) { 
+    .title{
+        font-size:35px;
+    }
+
+    .subtitle{
+        font-size:10px;
+    }
+
+    #pedroPascal{
+        max-width:300px;
+    }
+ }
+
+ 
