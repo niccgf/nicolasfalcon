@@ -1,0 +1,30 @@
+* {
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+    background-color: #0E0B2C;
+}
+
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+header #title {
+    font-family:'Poppins',sans-serif;
+    font-size:50px;
+    font-weight:bold;
+    color:white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header #navbar{
+    display:flex;
+    justify-content:space-evenly;
+    gap:25%;
+    color:white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
