@@ -133,6 +133,24 @@ main{
 
 /* --------- Main Section End --------- */
 
+/* ------------------ About Me ------------------ */
+
+.wip{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.wip .title{
+    color:white;
+}
+
+.wip #cat-pc{
+    align-items:center;
+}
+
+
+/* ------------------ About Me End ------------------ */
 
 /* --------- Media Queries --------- */
 
