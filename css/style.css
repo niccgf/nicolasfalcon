@@ -185,8 +185,8 @@ main{
         position: absolute;
         width: 726px;
         height: 726px;
-        left:0%;
-        top:30%;
+        left:-40%;
+        top:10%;
         background: rgba(255, 6, 66, 0.7);
         filter: blur(302px);
         z-index:-1;
