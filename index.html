@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
         <div class="circle-red"></div>
         <div class="circle-blue"></div>
         <!-- Header & Navbar -->
-        <header>
+        <header class="hidden">
             <div id="title">Nicolás Falcón</div>
             <div id="navbar">
                 <span class="navbar-item"><a href="index.html">HOME</a></span>
@@ -28,8 +29,16 @@
         <!-- Header & Navbar End -->
         <!-- Main Section Start -->
         <main>
+            <!-- Language Selector -->
+            <section id="language-sel" class="hidden">
+                <div id="lan-btn">
+                    <span class="button-lang" id="eng-lang">ENGLISH</span>
+                    <span class="button-lang" id="esp-lang">ESPAÑOL</span>
+                </div>
+            </section>
+            <!-- Language Selector End -->
             <!-- About Start -->
-            <section id="principal-about">
+            <section id="principal-about" class="hidden">
                 <div id="about">
                     <span class="subtitle">HI THERE, WELCOME TO MY SITE :-)</span>
                     
@@ -41,7 +50,7 @@
             </section>
             <!-- About End -->
             <!-- Personal Info Start -->
-            <section id="information">
+            <section id="information" class="hidden">
                 <div id="personal-info">
                     <span class="subtitle" id="anchor">A LITTLE BIT ABOUT ME</span>
                     <div class="personal-text">
@@ -72,6 +81,7 @@
         <!-- Main Section End -->
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="scripts/scripts.js"></script>
 </html>
