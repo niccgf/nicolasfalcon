@@ -18,7 +18,7 @@
         <div class="circle-red"></div>
         <div class="circle-blue"></div>
         <!-- Header & Navbar -->
-        <header class="hidden">
+        <header class="hidden-en">
             <div id="title">Nicolás Falcón</div>
             <div id="navbar">
                 <span class="navbar-item"><a href="index.html">HOME</a></span>
@@ -26,6 +26,14 @@
                 <span class="navbar-item"><a href="index.html">CONTACT</a></span>
             </div>
         </header>
+        <header-esp class="hidden-es">
+            <div id="title">Nicolás Falcón</div>
+            <div id="navbar">
+                <span class="navbar-item"><a href="index.html">INICIO</a></span>
+                <span class="navbar-item"><a id="test-esp">INFORMACIÓN</a></span>
+                <span class="navbar-item"><a href="index.html">CONTACTO</a></span>
+            </div>
+        </header-esp>
         <!-- Header & Navbar End -->
         <!-- Main Section Start -->
         <main>
@@ -38,7 +46,7 @@
             </section>
             <!-- Language Selector End -->
             <!-- About Start -->
-            <section id="principal-about" class="hidden">
+            <section id="principal-about" class="hidden-en">
                 <div id="about">
                     <span class="subtitle">HI THERE, WELCOME TO MY SITE :-)</span>
                     
@@ -49,8 +57,19 @@
                 </div>
             </section>
             <!-- About End -->
+            <!-- Sobre mí Inicio -->
+            <section id="principal-about" class="hidden-es">
+                <div id="about">
+                    <span id="subtitle">HOLA, ¡BIENVENIDO A MI SITIO! :)</span>
+                    <span class="title">Soy <red>Nicolás Falcón</red>,<br> QC Analyst <br> y <blue>Automation Engineer</blue></span>
+                </div>
+                <div id="photo">
+                    <img src="assets/picture2.png" alt="Myself" id="pedroPascal">
+                </div>
+            </section>
+            <!-- Sobre mí Final -->
             <!-- Personal Info Start -->
-            <section id="information" class="hidden">
+            <section id="information" class="hidden-en">
                 <div id="personal-info">
                     <span class="subtitle" id="anchor">A LITTLE BIT ABOUT ME</span>
                     <div class="personal-text">
@@ -77,6 +96,33 @@
                 </div>
             </section>
             <!-- Personal Info End -->
+            <!-- Info Personal Inicio -->
+            <section id="information" class="hidden-es">
+                <div id="personal-info">
+                    <span class="subtitle" id="anchor-es">UN POCO ACERCA DE MÍ</span>
+                    <div class="personal-text">
+                        <span class="text">Soy Software Developer en MELI, la plataforma de e-commerce <italic>más grande</italic> de latinoamerica, ¡con más de 76 millones de usuarios en la región!</span>
+                        <span class="text">Trabajo como <bold>Quality Control Analyst</bold>, enfocado en <bold>Automation con Python</bold></span>
+                        <span class="text">En mi día a día utilizo herramientas como <bold>Jira Software</bold>, <bold>Tableau</bold>, <bold>SQL</bold> (trabajando con BigQuery, anteriormente con Teradata), y <bold>Project Jupyter</bold>, junto con muchas otras</span>
+                        <span class="text">Mi principal responsabilidad es la de <bold>Gestionar Incidentes</bold> en nuestros sites, con calidad, dándole seguimiento al bug desde us creación hasta su resolución</span>
+                        <span class="text">asegurándome que la solución esté <bold>centrada en el usuario</bold> dándole especial prioridad a los más críticos;</span>
+                        <span class="text">Además, como <bold>Automation Engineer</bold>, trabajo buscando nuevas maneras de gestionar, los casos de los usuarios, y los bugs, de forma automática,</span>
+                        <span class="text">reduciendo el tiempo medio de respuesta a estos, y ayudando a reducir el incoming manual de todo el equipo.</span>
+                    </div>
+                    <span class="subtitle">HABILIDADES</span>
+                    <div class="personal-text">
+                        <span class="text"><bold>Programación</bold></span>
+                        <span class="text">Python, HTML, CSS, JavaScript, Java</span>
+                        <span class="text"><bold>Gestión de Incidentes</bold></span>
+                        <span class="text">Jira Software, Jira Service Management</span>
+                        <span class="text"><bold>Habilidades Soft</bold></span>
+                        <span class="text">Problem Solving, Habilidades Comunicacionales, Metodologías Ágiles (SCRUM)</span>
+                        <span class="text"><bold>Cosas Varias :-)</bold></span>
+                        <span class="text">Nivel de Inglés B2, Data Analytics, Control de versionado de Git, Testing...</span>
+                        <span class="text">... ¡y hay más que están por venir! <bold>Soy un alumno permanente.</bold></span>
+                    </div><br><br>
+                </div>
+            </section>
         </main>
         <!-- Main Section End -->
     </div>

@@ -16,6 +16,10 @@ body {
     visibility:hidden;
 }
 
+.hidden-en, .hidden-es{
+    visibility:hidden;
+}
+
 .fadeInLang{
     visibility:visible;
     animation: fadeIn 2s;
@@ -123,7 +127,7 @@ a:hover{
 
 /* --------- Header & Navbar --------- */
 
-header{
+header, header-esp{
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -131,7 +135,7 @@ header{
     z-index:2;
 }
 
-header #title {
+header #title,header-esp #title {
     font-family:'Poppins',sans-serif;
     font-size:50px;
     font-weight:bold;
@@ -140,15 +144,14 @@ header #title {
     -moz-osx-font-smoothing: grayscale;
 }
 
-header #navbar{
+header #navbar, header-esp #navbar{
     display:flex;
     justify-content:space-evenly;
-    gap:25%;
+    gap:30%;
     color:white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 /* --------- Main Section --------- */
 
 main{
